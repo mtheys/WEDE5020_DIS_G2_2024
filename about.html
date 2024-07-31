@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <script>
+        function DisplayMessage()
+        {
+            alert('Hello');
+        }
+
+        function DisplayTextbox()
+        {
+            var txt = document.getElementById('txtBox').value;
+            alert(txt);
+        }
+    </script>
 </head>
 <body>
-    
+    <button onclick="DisplayMessage()">Press</button>
+    <br>
+    <input type="text" id="txtBox">
+    <br>
+    <button onclick="DisplayTextbox()">
+        Display
+    </button>
 </body>
 </html>
